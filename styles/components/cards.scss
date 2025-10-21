@@ -1,0 +1,79 @@
+/**
+ * Cards.
+ */
+
+.cards {
+  display: grid;
+  grid-template-rows: auto;
+  gap: calc(var(--spacing) * 2);
+  justify-items: center;
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  gap: var(--spacing);
+  width: 100%;
+
+  @media (width >= 550px) {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(calc(var(--columns)), 1fr);
+    gap: var(--gutter);
+  }
+
+  .card-header {
+    width: 100%;
+  }
+
+  .card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--spacing);
+
+    @media (width >= 550px) {
+      grid-column: span 7;
+    }
+  }
+
+  .card-text {
+    flex: 1;
+  }
+
+  .card-image {
+    order: -1;
+    width: 100%;
+
+    @media (width >= 550px) {
+      grid-column: span 5;
+      order: initial;
+    }
+  }
+
+  .card-kicker {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .card-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .card-image img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-top-left-radius: var(--border-radius-regular);
+    border-top-right-radius: var(--border-radius-regular);
+  }
+}
+
+.card:nth-child(2n) .card-image {
+  @media (width >= 550px) {
+    order: -1;
+  }
+}

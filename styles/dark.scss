@@ -1,0 +1,11 @@
+/**
+ * Dark mode stillingar.
+ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background-primary: #000;
+    --color-background-secondary: #fff;
+    --color-accent: #600;
+    --color-protection: rgb(255 255 255 / 50%);
+  }
+}

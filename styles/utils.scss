@@ -1,0 +1,54 @@
+/**
+ * Hjálpar classar sem nýtast víða.
+ */
+
+/** hjálpar class sem felur sjónrænt en skjálesarar lesa */
+.sr-only:not(:focus, :active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* stylelint-disable-next-line property-no-deprecated */
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+/** Almennt takka útlit, getur virkað á bæði <a> og <button> **/
+.button {
+  display: inline-block;
+  padding: calc(var(--spacing) * 0.5) var(--spacing);
+  font-size: 1rem;
+  color: var(--color-background-primary);
+  text-decoration: none;
+  background-color: var(--color-background-secondary);
+  border: 0;
+  border-radius: var(--border-radius-regular);
+}
+
+/**
+ * Eftirfarandi setur upp grunn umbrot (layout) síðu með flexbox.
+ * Við förum yfir flexbox í viku 4 + verkefni 4 en þangað til er hægt að nota þetta
+ * sem grunn og án breytinga.
+ * Athugið að til þess að þetta virki þar að setja <div class="wrapper"> utan um allt efni 
+ * innan <body> sem á að fylgja þessu (<nav> ætti að vera undanskilið).
+ */
+.wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  gap: var(--vertical-space);
+
+  /* grid items eru miðjuð */
+  justify-items: center;
+  width: 100%;
+  min-height: 100vh;
+
+  /* pláss fyrir nav, það er nákvæmlega svona hátt */
+  margin-top: var(--height-nav);
+  background-color: var(--color-background-primary);
+
+  .wrapper-content {
+    flex: 1;
+  }
+}

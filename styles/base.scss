@@ -17,6 +17,14 @@ html {
 }
 
 @font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Inter-VariableFont_opsz,wght.ttf")
+    format("woff2");
+}
+
+@font-face {
   font-family: "Atkinson Hyperlegible";
   font-style: normal;
   font-weight: 400;

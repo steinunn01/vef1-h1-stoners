@@ -1,0 +1,50 @@
+/**
+ * Reviews.
+ */
+
+.reviews {
+  display: flex;
+  grid-template-rows: auto;
+  gap: calc(var(--spacing) * 2);
+  justify-items: center;
+  width: 100%;
+}
+
+.review {
+  display: flex;
+  flex-direction:column;
+  gap: var(--spacing);
+  width: 100%;
+
+  .review-title {
+    width: 100%;
+  }
+
+  .review-content {
+    gap: var(--spacing);
+
+  }
+
+  .review-person {
+    display:flex;
+    flex-direction:row;
+  }
+
+  .review-image {
+    order: -1;
+    width: 100%;
+  }
+  
+
+  .review-image img {
+    display: block;
+    height: 40px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius:4rem;
+  }
+
+
+  .review-info {
+  }
+}

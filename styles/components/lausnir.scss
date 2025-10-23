@@ -22,8 +22,8 @@
 .filters label {
   display: block;
   margin-bottom: 0.5rem;
-  background-color: var(--color-background-secondary);
-  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+  color: var(--color-text-secondary);
 }
 
 .filters input[type="checkbox"] {
@@ -31,7 +31,7 @@
   cursor: pointer;
   background-color: var(--color-background-secondary);
   border: 2px solid var(--color-text-primary);
-  accent-color: var(--color-text-primary);
+  accent-color: var(--color-background-secondary);
 
 }
 

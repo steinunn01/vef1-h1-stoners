@@ -1,0 +1,149 @@
+/**
+ * Fixes.
+ */
+
+.fix-format {
+  display:flex;
+  flex-direction:column;
+}
+
+.fixes {
+  display: flex;
+  flex-direction:row;
+  padding-top:4rem;
+  width: 100%;
+  height: 589px;
+  gap:2rem;
+
+  img {
+    height:100%;
+    width:100%;
+    object-fit:cover;
+  }
+}
+
+
+.fix {
+  display: flex;
+  flex-direction:column;
+  width:100%;
+  height:100%;
+
+  .fix-tag {
+    background-color:#cff7d3;
+    width:fit-content;
+    padding:0.5rem;
+    margin-bottom:0.5rem;
+    color:#02542D;
+    border-radius:0.5rem;
+  }
+  
+  .fix-price {
+    font-size:3rem;
+    font-weight:700;
+  }
+
+  .fix-description {
+    margin-top:0.5rem;
+    color:#757575;
+  }
+
+  .fix-dd {
+    margin-top:1.5rem;
+    display:flex;
+    gap:1.5rem;
+    width:100%;
+  }
+
+  .fix-dd-sub {
+    width:100%;
+  }
+
+
+  .fix-dd-titill {
+    padding-bottom:0.5rem;
+  }
+
+  .fix-dd-pick {  
+    padding:0.75rem 0.75rem 0.75rem 1rem;
+    border:1px solid #d9d9d9;
+    color:1e1e1e;
+    font-weight:300;
+    border-radius:0.5rem;
+    font-size:1rem;
+    justify-content: center;     
+
+    details:last-of-type summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary {
+      display: flex;
+      justify-content: space-between;     
+      align-items: center;
+    }
+
+    summary::after {
+      content: '>';
+      transform: rotate(90deg);
+    }
+
+    details[open] summary::after {
+      transform: rotate(270deg);
+    }
+
+  }
+
+
+  h1 {
+    size:1.5rem;
+    font-weight:600;
+    margin-bottom:1rem;
+  } 
+
+  .fix-purchase {
+    background-color:#2c2c2c;
+    border-radius:0.5rem;
+    color:#f5f5f5;
+    padding:0.5rem;
+    text-align:center;
+    font-size:1rem;
+    margin-top:1.5rem;
+  }
+}
+
+.fix-teaching {
+  background-color:#f5f5f5 ;
+  margin-top:1rem;
+}
+
+.fix-team {
+  margin-top:1.5rem;
+}
+.fix-team, .fix-teaching{
+  padding:1rem;  
+  border:1px solid #d9d9d9;
+  border-radius:0.5rem;
+  font-size:1rem;
+  justify-content: center;     
+  
+  details:last-of-type summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;     
+    align-items: center;
+    font-weight:600;
+  }
+
+  summary::after {
+    content: '>';
+    transform: rotate(90deg);
+  }
+
+  details[open] summary::after {
+    transform: rotate(270deg);
+  }
+}

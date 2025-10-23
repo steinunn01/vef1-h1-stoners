@@ -23,6 +23,13 @@ html {
   src: url("./fonts/Inter-VariableFont_opsz,wght.ttf")
     format("woff2");
 }
+@font-face {
+  font-family: "Inter";
+  font-style: semibold;
+  font-weight: 600;
+  src: url("./fonts/Inter-VariableFont_opsz,wght.ttf")
+    format("woff2");
+}
 
 html,
 input,

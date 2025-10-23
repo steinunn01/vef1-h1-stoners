@@ -41,12 +41,83 @@
         </div>
     </nav>
     <div class="wrapper">
-      <header class="intro">
+      <header>
+        <div class="content">
+          <h1 class="sr-only">Lausnayfirlit</h1>
       </header>
 
       <main class="wrapper-content" id="efni">
-     </main>
-
+      <section class="filters">
+          <h2 class="sr-only">Flokkar</h2>
+          <label><input type="checkbox" name="category" value="vefforritun"> Vefforritun, Lausnir fyrir vefi og vefforrit</label>
+          <label><input type="checkbox" name="category" value="profanir"> Prófanir, Prófanalausnir</label>
+          <label><input type="checkbox" name="category" value="merking"> Merking, Lorem ipsum dolor</label>
+          <div class="cost-range">
+            <label>Kostnaður: <span id="range-value">25.000 - 100.000</span> kr.</label>
+            <div class="slider-container">
+              <div class="slider-track"></div>
+              <input type="range" id="min-range" min="25000" max="100000" value="25000" step="25000">
+              <input type="range" id="max-range" min="25000" max="100000" value="100000" step="25000">
+            </div>
+          </div>
+        </section>
+        <section class="solutions">
+          <h2 class="sr-only">Lausnir</h2>
+          <div class="search-sort">
+            <input type="text" placeholder="Leita" class="search-input" />
+            <div class="sort-options">
+              <h3 class="sr-only">Raða eftir</h3>
+              <button class="sort-btn active">✓ Nýjast</button>
+              <button class="sort-btn">Verð lægst fyrst</button>
+              <button class="sort-btn">Verð hæst fyrst</button>
+            </div>
+          </div>
+          <div class="solution-cards">
+            <div class="solution-card">
+              <img src="/myndir/forritari.jpg" alt="Forritunarumhverfi og prófanir" />
+              <h3>Forritunarumhverfi og prófanir</h3>
+              <p>Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.</p>
+              <p class="cost">25.000 kr.-</p>
+              <a href="#" class="view-more">Skoða nánar</a>
+            </div>
+            <div class="solution-card">
+              <img src="/myndir/abstrakt.jpg" alt="Lausn #2" />
+              <h3>Lausn #2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="cost">75.000 kr.-</p>
+              <a href="#" class="view-more">Skoða nánar</a>
+            </div>
+            <div class="solution-card">
+              <img src="/myndir/placeholder.png" alt="Lausn #3" />
+              <h3>Lausn #3</h3>
+              <p>Vestibulum vestibulum felis nulla, in suscipit justo dignissim ultrices. Nunc id porttitor mauris. Nunc id porttitor mauris.</p>
+              <p class="cost">50.000 kr.-</p>
+              <a href="#" class="view-more">Skoða nánar</a>
+            </div>
+            <div class="solution-card">
+              <img src="/myndir/placeholder.png" alt="Lausn #4" />
+              <h3>Lausn #4</h3>
+              <p>Vestibulum ac felis in lacus porta interdum. Curabitur vitae quam non massa interdum consectetur sed ut tellus.</p>
+              <p class="cost">100.000 kr.-</p>
+              <a href="#" class="view-more">Skoða nánar</a>
+            </div>
+            <div class="solution-card">
+              <img src="/myndir/placeholder.png" alt="Lausn #5" />
+              <h3>Lausn #5</h3>
+              <p>Vivamus in imperdiet lectus. Phasellus sed arcu eu augue laoreet efficitur vitae at nisi.</p>
+              <p class="cost">25.000 kr.-</p>
+              <a href="#" class="view-more">Skoða nánar</a>
+            </div>
+            <div class="solution-card">
+              <img src="/myndir/placeholder.png" alt="Lausn #6" />
+              <h3>Lausn #6</h3>
+              <p>Lorem id porttitor mauris. Nunc id porttitor mauris.</p>
+              <p class="cost">100.000 kr.-</p>
+              <a href="#" class="view-more">Skoða nánar</a>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>

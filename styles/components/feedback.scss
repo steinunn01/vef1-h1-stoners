@@ -1,0 +1,67 @@
+/**
+ * Feedback 
+ */
+
+.feedback {
+  height:100%;
+  text-align: left;
+  padding-top:4rem;
+  display:flex;
+  flex-direction:column;
+
+
+  img {
+    height:1.5rem;
+  }
+  
+  .feedback-content {
+    gap: var(--spacing);
+    justify-content:left;
+
+  }
+ 
+  .feedback-person {
+    display:flex;
+    flex-direction:row;
+    color:#b3b3b3;
+    bottom:0;
+  }
+
+  .feedback-image {
+    order: -1;
+    padding-right:0.8rem;
+  }
+
+   .feedback-info a {
+    color:#b3b3b3;
+  }
+ 
+  .feedback-image img {
+    display: block;
+    height: 40px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius:4rem;
+  }
+  h1 {
+    font-size: 1.5rem; 
+    font-weight: 600;
+    padding-bottom: 4rem;
+    padding-top: 1.5rem;
+  }
+
+  h3 {
+    font-size:1rem;
+    color: #1e1e1e;
+    font-weight:400;
+  }
+
+  h4 {
+    color: #757575;
+  }
+}
+.feedback-grow {
+  flex-grow:1;
+}
+
+

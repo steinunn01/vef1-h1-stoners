@@ -26,19 +26,20 @@
 
   .solution-content {
     justify-content:left;
-
   }
 
   .solution-image {
     order: -1;
   }
   
+
   .solution-image img {
     display: block;
     height: 160px;
     object-fit: cover;
     width:100%;
   }
+
 
   .solution-info a {
     color:#b3b3b3;

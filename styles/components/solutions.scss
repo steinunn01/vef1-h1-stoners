@@ -2,7 +2,7 @@
  * Reviews.
  */
 
-.reviews {
+.solutions {
   display: flex;
   grid-template-rows: auto;
   gap: calc(var(--spacing) * 2);
@@ -11,46 +11,36 @@
   padding-bottom:2rem;
 }
 
-.review {
+.solution {
   display: flex;
   flex-direction:column;
   gap: var(--spacing);
-  padding: 1rem;
+  padding:1.5rem; 
   width: 100%;
   border: 1px solid lightgrey;
   border-radius:0.5rem;
 
-  .review-title {
+  .solution-title {
     width: 100%;
   }
 
-  .review-content {
-    gap: var(--spacing);
+  .solution-content {
     justify-content:left;
 
   }
 
-  .review-person {
-    display:flex;
-    flex-direction:row;
-  }
-
-  .review-image {
+  .solution-image {
     order: -1;
-    padding-right:0.8rem;
   }
   
-
-  .review-image img {
+  .solution-image img {
     display: block;
-    height: 40px;
+    height: 160px;
     object-fit: cover;
-    object-position: 50% 50%;
-    border-radius:4rem;
+    width:100%;
   }
 
-
-  .review-info a {
+  .solution-info a {
     color:#b3b3b3;
   }
 }
